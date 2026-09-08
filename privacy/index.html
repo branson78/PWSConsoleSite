@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#0f1115">
-  <meta name="description" content="Privacy information for PWS Console and the public PWS Console website.">
+  <meta name="description" content="Privacy Policy for PWS Console.">
   <title>Privacy | PWS Console</title>
   <link rel="stylesheet" href="/assets/css/site.css">
 </head>
@@ -14,7 +14,9 @@
       <div class="pws-header-inner">
         <div class="pws-header-brand">
           <div class="pws-brand-lockup">
-            <a class="pws-wordmark" href="/">PWS CONSOLE</a>
+            <a class="pws-logo-link" href="/" aria-label="PWS Console home">
+              <img class="pws-logo" src="/assets/images/PWSConsole-Logo-512.png" alt="PWS Console">
+            </a>
           </div>
           <div class="pws-brand-subtitle">Personal Weather Station Console</div>
           <nav class="pws-tabs" aria-label="Primary">
@@ -36,18 +38,83 @@
 
     <main class="pws-main">
       <section class="page-title">
-        <p class="eyebrow">PWS Console</p>
-        <h1>Privacy</h1>
-        <p>This is the public privacy-policy destination. Final policy language will be completed before production App Store distribution.</p>
+        <p class="eyebrow">Privacy Policy</p>
+        <h1>Your weather data stays focused on weather.</h1>
+        <p>PWS Console is designed as a weather application, not a data-collection platform. This policy explains what information the app uses, why it uses it, and where that information goes.</p>
       </section>
+
       <section class="stack">
         <article class="pws-card">
-          <h2>Privacy by architecture</h2>
-          <p class="body-copy">PWS Console is designed so a user-owned Weather Underground credential remains on the user's iPhone in Keychain storage. It is not distributed to widgets, Apple Watch, complications, or the public PWS Console website.</p>
+          <h2>Overview</h2>
+          <p class="body-copy">PWS Console does not require a PWS Console account, does not contain advertising, and does not use your information for cross-app or cross-website advertising tracking. PWS Console does not sell personal information.</p>
         </article>
+
         <article class="pws-card">
-          <h2>Public website</h2>
-          <p class="body-copy">This website is served as static assets through Cloudflare. It has no login, database, PWS credential handling, or connection to the private PWS Console application runtime.</p>
+          <h2>Location</h2>
+          <p class="body-copy">PWS Console can use your device's location to provide local weather information and to center weather radar on your current area. Location access is controlled through Apple's permission system and can be changed or revoked at any time in device Settings.</p>
+          <p class="body-copy">When a weather feature requires a geographic location, PWS Console may send the location or derived location information needed for that request to a third-party weather-data service. It is used to obtain the weather information you requested.</p>
+        </article>
+
+        <article class="pws-card">
+          <h2>Personal Weather Stations</h2>
+          <p class="body-copy">Connecting a personal weather station is optional. Local Weather and radar can be used without configuring a personal station.</p>
+          <p class="body-copy">If you choose to connect your own Weather Underground Personal Weather Station, you provide a Station ID and your own Weather Underground API key. The Station ID and API key are used to request observations from Weather Underground.</p>
+          <p class="body-copy">Your Weather Underground API key is stored in the iPhone Keychain. PWS Console does not provide a shared developer credential and does not distribute your API key to widgets, Apple Watch, complications, or the public PWS Console website.</p>
+        </article>
+
+        <article class="pws-card">
+          <h2>Weather Data Providers</h2>
+          <p class="body-copy">PWS Console uses third-party weather-data services to provide observations, forecasts, radar, and related weather information. Requests to those services may include only the information needed to fulfill the requested weather feature, such as a location, station identifier, or provider credential.</p>
+          <p class="body-copy">Weather Underground is identified specifically because users who enable personal-station weather provide their own Weather Underground Station ID and API key. Other weather-data providers may change over time as PWS Console evolves. Those services process requests under their own privacy policies and terms.</p>
+        </article>
+
+        <article class="pws-card">
+          <h2>Apple Watch, Widgets, and App Data Sharing</h2>
+          <p class="body-copy">PWS Console shares weather information between its own Apple-platform components so that current information can appear on widgets, Apple Watch, and complications. Apple App Groups and WatchConnectivity are used for this purpose.</p>
+          <p class="body-copy">For personal-station weather, the iPhone performs the provider request and normalizes the resulting weather information. Downstream surfaces receive the finished weather snapshot rather than your Weather Underground API key.</p>
+        </article>
+
+        <article class="pws-card">
+          <h2>Information Stored on Your Devices</h2>
+          <p class="body-copy">PWS Console stores application settings and cached weather information on your devices as needed to operate the app, support widgets and Apple Watch, and retain useful last-known information when a refresh is temporarily unavailable.</p>
+          <p class="body-copy">Weather Underground credentials are stored using the iPhone Keychain. Other app preferences and cached weather information use Apple-provided application storage and App Group storage where needed by PWS Console components.</p>
+        </article>
+
+        <article class="pws-card">
+          <h2>Retention, Removal, and Permissions</h2>
+          <p class="body-copy">PWS Console does not operate a user-account database or developer-operated application backend that stores your personal weather-station credentials or location history.</p>
+          <p class="body-copy">You can revoke location permission through Apple device Settings. You can also remove or replace personal-station configuration in PWS Console. Application settings and cached data are otherwise managed through the app and Apple's normal device-storage behavior.</p>
+        </article>
+
+        <article class="pws-card">
+          <h2>Tracking and Advertising</h2>
+          <p class="body-copy">PWS Console does not display advertising and does not use your weather information, location, or station configuration to track you across apps or websites for advertising purposes.</p>
+        </article>
+
+        <article class="pws-card">
+          <h2>Accounts</h2>
+          <p class="body-copy">PWS Console does not require a PWS Console account or sign-in. A separate Weather Underground account may be required if you choose to connect your own Weather Underground Personal Weather Station and obtain an API key.</p>
+        </article>
+
+        <article class="pws-card">
+          <h2>Public Website</h2>
+          <p class="body-copy">The public website at pwsconsole.com is served as static content through Cloudflare. It has no PWS Console login, application database, Weather Underground credential handling, or connection to a user's private PWS Console runtime. Like other web-hosting providers, Cloudflare may process standard network request information needed to deliver and protect the site under its own policies.</p>
+        </article>
+
+        <article class="pws-card">
+          <h2>Children's Privacy</h2>
+          <p class="body-copy">PWS Console is a general-purpose weather application and is not specifically directed to children. PWS Console does not knowingly operate a service intended to collect personal information from children.</p>
+        </article>
+
+        <article class="pws-card">
+          <h2>Changes to This Policy</h2>
+          <p class="body-copy">This policy may be updated as PWS Console develops. Material changes affecting how information is handled will be reflected on this page.</p>
+        </article>
+
+        <article class="pws-card">
+          <h2>Contact</h2>
+          <p class="body-copy">Questions about this Privacy Policy or how PWS Console handles information can be sent to <a href="mailto:support@pwsconsole.com">support@pwsconsole.com</a>.</p>
+          <p class="body-copy"><strong>Last updated:</strong> September 8, 2026</p>
         </article>
       </section>
     </main>

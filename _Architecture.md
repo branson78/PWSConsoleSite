@@ -40,8 +40,8 @@ The initial web design tokens are derived directly from `PWSConsoleMobile/Shared
 - Precipitation blue: `#8FC5FF`
 
 The web header intentionally follows the desktop PWS Console shell more closely than the mobile shell:
-- Desktop-derived 64 px brand/header scale.
-- `PWS CONSOLE` accent wordmark with a secondary product subtitle.
+- Desktop-derived header proportions adapted for a public-facing product site.
+- Approved PWS Console logo artwork centered as the primary brand element with a secondary product subtitle.
 - Centered pill-style navigation derived from the desktop `.nav-links` treatment.
 - Right-side status area derived from the desktop `.header-status` pattern.
 - Dark card surfaces with one-pixel borders remain shared with desktop and mobile clients.
@@ -76,3 +76,12 @@ A GitHub push to `main` triggers Cloudflare deployment. Changes should be review
 The desktop public site uses a wider maximum content width than the mobile-first shell so content extends closer to browser edges on large displays.
 
 The live Hook Echo preview is intentionally placed in the first-screen content region, right-aligned beside a 2x2 block of smaller feature cards. This keeps the motion visible on initial desktop page load without letting the radar dominate the page. On narrower screens the layout collapses to a single column.
+
+
+## Public privacy and support surface
+
+`/privacy/` is the durable public Privacy Policy URL for PWS Console. It documents the Build 4 privacy boundary, including optional Weather Underground configuration, iPhone Keychain credential storage, location use, third-party weather-data requests, App Group and WatchConnectivity sharing, on-device cached data, and the absence of PWS Console advertising or cross-app advertising tracking.
+
+Public privacy and support inquiries use `support@pwsconsole.com`.
+
+The policy intentionally identifies Weather Underground where the user supplies provider-specific credentials while describing other weather-data services generically to avoid creating a brittle provider-link directory.
