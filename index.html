@@ -1,5 +1,156 @@
 <!doctype html>
 <html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PWS Console</title></head>
-<body><h1>PWS Console</h1><p>Website coming soon.</p></body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0f1115">
+  <meta name="description" content="PWS Console — local weather, personal weather station data, radar, widgets, and Apple Watch.">
+  <title>Overview | PWS Console</title>
+  <link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body>
+  <div class="pws-shell">
+    <header class="pws-header">
+      <div class="pws-header-inner">
+        <div class="pws-header-brand">
+          <div class="pws-brand-lockup">
+            <a class="pws-wordmark" href="/">PWS CONSOLE</a>
+          </div>
+          <div class="pws-brand-subtitle">Personal Weather Station Console</div>
+          <nav class="pws-tabs" aria-label="Primary">
+            <a class="pws-tab" href="/" aria-current="page">Overview</a> <a class="pws-tab" href="/features/">Features</a> <a class="pws-tab" href="/setup/">Setup</a> <a class="pws-tab" href="/support/">Support</a> <a class="pws-tab" href="/privacy/">Privacy</a> <a class="pws-tab" href="/beta/">Beta</a>
+          </nav>
+        </div>
+
+        <div class="pws-header-status">
+          <div class="pws-status-row">
+            <div class="pws-status-pill">
+              <span class="pws-status-dot" aria-hidden="true"></span>
+              Public Site
+            </div>
+          </div>
+          <div class="pws-context">Weather · Radar · PWS · Apple Watch</div>
+        </div>
+      </div>
+    </header>
+
+    <main class="pws-main">
+      <section class="hero" aria-labelledby="page-heading">
+        <article class="pws-card">
+          <p class="eyebrow">PWS Console</p>
+          <h1 id="page-heading">Your weather, your station, wherever you are.</h1>
+          <p class="lead">Local weather, personal weather station observations, animated radar, widgets, and Apple Watch — designed as one consistent console.</p>
+          <p class="body-copy">A personal weather station is optional. PWS Console works with native local weather on Apple devices and can also connect to a user's own Weather Underground PWS.</p>
+          <div class="pws-actions">
+            <a class="pws-button primary" href="/features/">Explore Features</a>
+            <a class="pws-button" href="/setup/">Station Setup</a>
+          </div>
+        </article>
+
+        <aside class="pws-card" aria-label="Platform summary">
+          <p class="eyebrow">Apple Platforms</p>
+          <div class="stat-list">
+            <div class="stat">
+              <div class="stat-label">iPhone & iPad</div>
+              <div class="stat-value">Weather · Radar · Station</div>
+            </div>
+            <div class="stat">
+              <div class="stat-label">Apple Watch</div>
+              <div class="stat-value">PWS · Local · Forecast · Radar</div>
+            </div>
+            <div class="stat">
+              <div class="stat-label">Glanceable</div>
+              <div class="stat-value">Widgets & Complications</div>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="home-feature-region" aria-label="PWS Console highlights and live radar">
+        <div class="home-feature-cards">
+          <article class="pws-card feature-card">
+            <span class="feature-kicker">Personal Station</span>
+            <h2>Your PWS</h2>
+            <p>Optionally connect a Weather Underground personal weather station using your own Station ID and API key.</p>
+          </article>
+
+          <article class="pws-card feature-card">
+            <span class="feature-kicker">Native Weather</span>
+            <h2>Local Weather</h2>
+            <p>Use device location or a ZIP fallback for native local conditions and forecasts without configuring a personal station.</p>
+          </article>
+
+          <article class="pws-card feature-card">
+            <span class="feature-kicker">Apple Watch</span>
+            <h2>Weather on your wrist</h2>
+            <p>Switch between PWS and Local weather, view forecasts, and use Digital Crown radar zoom from the Watch app.</p>
+          </article>
+
+          <article class="pws-card feature-card">
+            <span class="feature-kicker">Home Screen</span>
+            <h2>Widgets</h2>
+            <p>Glanceable station conditions through compact PWS Console widgets that consume the canonical iPhone snapshot.</p>
+          </article>
+        </div>
+
+        <section class="pws-card live-radar-card home-radar-card" aria-labelledby="live-radar-title">
+          <div class="live-radar-heading">
+            <div>
+              <p class="eyebrow">Live Radar Demo</p>
+              <h2 id="live-radar-title">New York City</h2>
+            </div>
+            <span class="live-radar-source">Hook Echo</span>
+          </div>
+
+          <div class="live-radar-frame-wrap">
+            <iframe
+              class="live-radar-frame"
+              title="Hook Echo live radar centered on New York City"
+              src="https://hookecho.pages.dev/?embed#goto=KOKX,-74.0060,40.7128,10,REF,0,thr:20"
+              loading="eager"
+              referrerpolicy="no-referrer"
+              allow="fullscreen"
+            ></iframe>
+          </div>
+
+          <div class="live-radar-footer">
+            <span>Anonymous public demo location · 20 dBZ</span>
+            <a href="https://hookecho.pages.dev/" target="_blank" rel="noreferrer">Open Hook Echo ↗</a>
+          </div>
+        </section>
+      </section>
+
+      <section class="grid" aria-label="Additional PWS Console highlights">
+        <article class="pws-card feature-card">
+          <span class="feature-kicker">NOAA / NWS MRMS</span>
+          <h2>Animated Radar</h2>
+          <p>Regional animated weather radar designed for efficient local playback on iPhone, iPad, and Apple Watch.</p>
+        </article>
+
+        <article class="pws-card feature-card">
+          <span class="feature-kicker">TestFlight</span>
+          <h2>External beta</h2>
+          <p>PWS Console is moving toward broader external testing. Beta information and invitations will live here.</p>
+        </article>
+      </section>
+
+<section class="pws-card callout">
+        <p class="eyebrow">Design principle</p>
+        <h2>Built for PWS owners. Useful without one.</h2>
+        <p class="body-copy">The public site follows the same dark card-based visual system as PWS Console itself, while keeping the public website completely separate from private app infrastructure.</p>
+      </section>
+    </main>
+
+    <footer class="pws-footer">
+      <div class="pws-footer-inner">
+        <div>PWS Console</div>
+        <div class="pws-footer-links">
+          <a href="/setup/">Setup</a>
+          <a href="/support/">Support</a>
+          <a href="/privacy/">Privacy</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
 </html>
