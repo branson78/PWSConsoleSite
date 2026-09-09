@@ -47,6 +47,8 @@ This document is reviewed before each milestone commit. Completed active items a
 
 ## Completed milestones
 
+- 2026-09-08 — Durable public Support page published around PWS Console app support, with `support@pwsconsole.com` as the support/beta contact and an explicit boundary excluding third-party weather-station hardware and upstream station troubleshooting.
+
 - 2026-09-08 — Public Privacy Policy completed for the Build 4 Apple-client architecture, `support@pwsconsole.com` established as the public privacy/support contact, and approved PWS Console logo artwork adopted across the public-site header.
 
 - 2026-09-08 — Public website shell established with desktop-derived header proportions, widened desktop layout, native PWS Console card styling, initial public-site routes, and an anonymous right-aligned Hook Echo radar preview visible in the initial desktop viewport.

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#0f1115">
-  <meta name="description" content="Support and beta feedback information for PWS Console.">
+  <meta name="description" content="Help and support for PWS Console on iPhone, iPad, Apple Watch, widgets, and complications.">
   <title>Support | PWS Console</title>
   <link rel="stylesheet" href="/assets/css/site.css">
 </head>
@@ -20,10 +20,14 @@
           </div>
           <div class="pws-brand-subtitle">Personal Weather Station Console</div>
           <nav class="pws-tabs" aria-label="Primary">
-            <a class="pws-tab" href="/">Overview</a> <a class="pws-tab" href="/features/">Features</a> <a class="pws-tab" href="/setup/">Setup</a> <a class="pws-tab" href="/support/" aria-current="page">Support</a> <a class="pws-tab" href="/privacy/">Privacy</a> <a class="pws-tab" href="/beta/">Beta</a>
+            <a class="pws-tab" href="/">Overview</a>
+            <a class="pws-tab" href="/features/">Features</a>
+            <a class="pws-tab" href="/setup/">Setup</a>
+            <a class="pws-tab" href="/support/" aria-current="page">Support</a>
+            <a class="pws-tab" href="/privacy/">Privacy</a>
+            <a class="pws-tab" href="/beta/">Beta</a>
           </nav>
         </div>
-
         <div class="pws-header-status">
           <div class="pws-status-row">
             <div class="pws-status-pill">
@@ -38,23 +42,69 @@
 
     <main class="pws-main">
       <section class="page-title">
-        <p class="eyebrow">Help</p>
-        <h1>Support</h1>
-        <p>This page will become the public support destination for TestFlight users and future releases.</p>
+        <p class="eyebrow">PWS Console Support</p>
+        <h1>Help with PWS Console</h1>
+        <p>Having trouble with the app, Apple Watch, widgets, radar, or connecting your personal weather station? Start here.</p>
       </section>
+
       <section class="stack">
         <article class="pws-card">
-          <h2>Beta feedback</h2>
-          <p class="body-copy">For now, use the feedback contact provided in TestFlight. A dedicated public support contact will be published here.</p>
+          <h2>Using PWS Console</h2>
+          <p class="body-copy">If information appears out of date, try the Refresh control in PWS Console and allow the update to complete. Weather information comes from several sources, so different parts of the app may update at different times.</p>
+          <p class="body-copy">Local Weather and radar do not require a personal weather station. A personal station is an optional additional source for your own observations.</p>
         </article>
+
         <article class="pws-card">
-          <h2>Useful details to include</h2>
-          <ul class="pws-list">
-            <li>Device model and OS version.</li>
-            <li>Whether the issue affects Local Weather or a configured PWS.</li>
-            <li>What you expected and what actually happened.</li>
-            <li>Whether the problem persists after a manual refresh.</li>
+          <h2>Location &amp; Local Weather</h2>
+          <p class="body-copy">PWS Console normally uses your device's current location for Local Weather and radar. If current location is unavailable and you have configured a ZIP code, PWS Console can use that ZIP code as a fallback location so weather information can remain available.</p>
+          <p class="body-copy">If PWS Console cannot determine your current location, check that Location Services are enabled for PWS Console in iPhone or iPad Settings. You can change or revoke location access at any time through Apple device Settings.</p>
+        </article>
+
+        <article class="pws-card">
+          <h2>Radar</h2>
+          <p class="body-copy">Radar requires an Internet connection and may take a moment to retrieve and prepare current imagery. If radar does not load, confirm that the device has Internet access and try Refresh again.</p>
+          <p class="body-copy">Radar availability can also be affected by the external weather-data services that supply the imagery.</p>
+        </article>
+
+        <article class="pws-card">
+          <h2>Apple Watch</h2>
+          <p class="body-copy">PWS Console for Apple Watch can display Local Weather and, when configured on the iPhone, personal-station weather. Personal-station configuration and credentials remain on the iPhone.</p>
+          <p class="body-copy">If Station information is unavailable on the Watch, first open PWS Console on the paired iPhone and confirm that Station weather is working there. Then return to the Watch and try Refresh.</p>
+          <p class="body-copy">Local Weather on Apple Watch is separate from personal-station weather and does not require a configured PWS.</p>
+        </article>
+
+        <article class="pws-card">
+          <h2>Widgets &amp; Complications</h2>
+          <p class="body-copy">Widgets and Apple Watch complications display the most recently available weather information supplied by PWS Console. Apple controls when background widgets and complications are refreshed, so they may not always change immediately when the main app does.</p>
+          <p class="body-copy">If a Station widget has no data, open PWS Console on the iPhone and confirm that Station weather is configured and displaying successfully.</p>
+        </article>
+
+        <article class="pws-card">
+          <h2>Connecting Your Personal Weather Station</h2>
+          <p class="body-copy">Personal weather station support in PWS Console is optional. To use Station weather, configure your Weather Underground Personal Weather Station ID and your own Weather Underground API key in PWS Console on the iPhone.</p>
+          <p class="body-copy">PWS Console support covers connecting that information to the app and problems with the PWS Console integration.</p>
+
+          <h3>Weather station support</h3>
+          <p class="body-copy">PWS Console does not provide support for weather-station hardware, sensors, calibration, station networking, or problems sending observations from your station to Weather Underground. For those issues, please use the support resources provided by your weather-station manufacturer or Weather Underground.</p>
+        </article>
+
+        <article class="pws-card">
+          <h2>Reporting a Problem</h2>
+          <p class="body-copy">If you need help with PWS Console, a few details can make troubleshooting much easier. When practical, include:</p>
+          <ul class="body-copy">
+            <li>The device you are using, such as iPhone, iPad, or Apple Watch.</li>
+            <li>Your iOS, iPadOS, or watchOS version.</li>
+            <li>Your PWS Console version and build number.</li>
+            <li>Which screen, widget, complication, or feature is affected.</li>
+            <li>What you expected to happen and what happened instead.</li>
+            <li>A screenshot if it helps illustrate the problem.</li>
           </ul>
+          <p class="body-copy">Please do not send your Weather Underground API key or other passwords in a support email or screenshot.</p>
+        </article>
+
+        <article class="pws-card">
+          <h2>Contact Support</h2>
+          <p class="body-copy">For PWS Console questions, problems, or beta feedback, email <a href="mailto:support@pwsconsole.com">support@pwsconsole.com</a>.</p>
         </article>
       </section>
     </main>

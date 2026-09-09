@@ -85,3 +85,11 @@ The live Hook Echo preview is intentionally placed in the first-screen content r
 Public privacy and support inquiries use `support@pwsconsole.com`.
 
 The policy intentionally identifies Weather Underground where the user supplies provider-specific credentials while describing other weather-data services generically to avoid creating a brittle provider-link directory.
+
+## Public support boundary
+
+`/support/` is the durable public support destination for PWS Console and uses `support@pwsconsole.com`.
+
+PWS Console support covers the application and its integrations, including Local Weather, radar, Apple Watch, widgets, complications, and connecting Weather Underground Station configuration to the app.
+
+PWS Console does not provide support for third-party weather-station hardware, sensors, calibration, station networking, or a station's upstream delivery of observations to Weather Underground. Those issues remain with the station manufacturer or weather-data provider.
