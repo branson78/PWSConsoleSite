@@ -99,3 +99,9 @@ PWS Console does not provide support for third-party weather-station hardware, s
 `/setup/` is the durable public Getting Started destination for configuring and using PWS Console across iPhone, iPad, Apple Watch, widgets, and complications. It explains the optional Station integration, device-location and ZIP-fallback behavior, refresh expectations, downstream credential isolation, and safe support reporting.
 
 PWS Console documentation covers how users configure and operate PWS Console. It does not attempt to provide general personal-weather-station hardware, sensor calibration, networking, Weather Underground account, or upstream station-publishing instructions. Weather Underground may be linked as an external resource where directly relevant to configuring the PWS Console integration; the Setup page uses only its top-level public site rather than depending on a fragile account-specific path.
+
+## Public beta boundary
+
+`/beta/` is the stable public landing page for external-beta participation expectations, requested test coverage, and credential-safe feedback guidance. Its public copy is deliberately independent of a specific application build number or Apple review state.
+
+TestFlight invitation availability may change without altering the page structure. Until an intentional participation mechanism is available, the Join the Beta card remains a durable availability message rather than linking to an invented or provisional invitation.
