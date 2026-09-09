@@ -40,25 +40,55 @@
       <section class="page-title">
         <p class="eyebrow">Getting Started</p>
         <h1>Setup</h1>
-        <p>PWS Console works without a personal weather station. PWS owners can optionally connect their own Weather Underground station.</p>
+        <p>PWS Console works with or without a personal weather station. Local Weather and radar can use your device's current location, and connecting a compatible personal station is optional.</p>
       </section>
+
       <section class="stack">
         <article class="pws-card">
-          <h2>Local Weather</h2>
-          <p class="body-copy">Allow location access for current local weather and radar. A five-digit ZIP can be configured as a fallback location.</p>
+          <h2>Location &amp; Local Weather</h2>
+          <p class="body-copy">PWS Console uses device location for Local Weather and to center radar on your current area. If current location is unavailable and you have configured a ZIP code, PWS Console can use that ZIP code as a fallback location.</p>
+          <p class="body-copy">You can change or revoke location permission at any time through Apple device Settings. Removing Station configuration does not prevent Local Weather or radar from using your location or ZIP fallback.</p>
         </article>
+
         <article class="pws-card">
-          <h2>Optional Personal Weather Station</h2>
+          <h2>Connect Your Personal Weather Station</h2>
+          <p class="body-copy">Connecting a personal weather station is optional. If your station already publishes observations through Weather Underground, you can configure it in PWS Console Settings on the iPhone.</p>
           <ul class="pws-list">
-            <li>Use your own Weather Underground Personal Weather Station identifier.</li>
-            <li>Provide your own Weather Underground API key.</li>
-            <li>The API key remains stored in the iPhone Keychain.</li>
-            <li>Widgets and Apple Watch receive normalized station data, not the API key.</li>
+            <li><strong>Station ID</strong> is your Weather Underground Personal Weather Station identifier.</li>
+            <li><strong>API Key</strong> is the API key associated with your own Weather Underground account.</li>
           </ul>
+          <p class="body-copy">If you need help locating your Station ID or obtaining an API key, visit <a href="https://www.wunderground.com/">Weather Underground</a>. PWS Console documents its own integration; station hardware, calibration, networking, and publishing setup remain with your station manufacturer or Weather Underground.</p>
+          <p class="body-copy">Your API key is stored securely in the iPhone Keychain. It is never distributed to widgets, Apple Watch, or complications. After saving the Station configuration, use Refresh to retrieve your station observations.</p>
         </article>
+
         <article class="pws-card">
-          <h2>More setup help is coming</h2>
-          <p class="body-copy">Step-by-step screenshots and troubleshooting guidance will be added before broader public beta invitations.</p>
+          <h2>Apple Watch</h2>
+          <p class="body-copy">PWS Console supports both Station and Local Weather on Apple Watch. Station weather originates from the PWS configured on the paired iPhone, while Local Weather can use the Watch's native location and weather capabilities.</p>
+          <p class="body-copy">For the smoothest setup, open and configure PWS Console on the iPhone first, then open the Watch app. Personal Station configuration and credentials remain on the iPhone.</p>
+        </article>
+
+        <article class="pws-card">
+          <h2>Widgets &amp; Complications</h2>
+          <p class="body-copy">Widgets and complications provide at-a-glance weather information. Station widgets receive the latest canonical Station information from the iPhone and never receive your Weather Underground API key.</p>
+          <p class="body-copy">Apple Watch complications can present Station or Local Weather according to the selected source. Apple controls background update timing, so a new update may not always appear immediately.</p>
+        </article>
+
+        <article class="pws-card">
+          <h2>Refreshing Weather Data</h2>
+          <p class="body-copy">PWS Console normally updates weather automatically. Refresh requests an immediate update. On Apple Watch, Refresh updates available Watch weather sources and helps synchronize current Station information from the paired iPhone.</p>
+          <p class="body-copy">When a weather source is temporarily unavailable, PWS Console may continue showing usable recent information while it attempts to recover.</p>
+        </article>
+
+        <article class="pws-card">
+          <h2>Changing Your Configuration</h2>
+          <p class="body-copy">Station configuration remains optional. You can change your Station ID, Weather Underground API key, ZIP fallback, and related preferences through PWS Console Settings.</p>
+          <p class="body-copy">Removing Station configuration disables that optional source; Local Weather and radar continue to work independently.</p>
+        </article>
+
+        <article class="pws-card">
+          <h2>Need Help?</h2>
+          <p class="body-copy">Visit <a href="/support/">Support</a> or email <a href="mailto:support@pwsconsole.com">support@pwsconsole.com</a>. A useful problem report identifies the affected device or feature and describes what happened.</p>
+          <p class="body-copy"><strong>Never send your Weather Underground API key, passwords, or other credentials in support email or screenshots.</strong></p>
         </article>
       </section>
     </main>

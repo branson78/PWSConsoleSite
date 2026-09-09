@@ -16,7 +16,6 @@ This document is reviewed before each milestone commit. Completed active items a
 - [ ] Replace placeholder/beta wording with final public copy.
 - [ ] Complete the public Privacy Policy based on actual App Store Connect disclosures.
 - [ ] Publish a durable support contact and support workflow.
-- [ ] Add final Getting Started guidance for optional Weather Underground Station configuration.
 - [ ] Add the external TestFlight invitation link only after Apple approval and intentional tester-enrollment decision.
 - [ ] Replace the temporary text-only desktop brand lockup with approved PWS Console logo artwork without altering the original branding.
 - [ ] Confirm all public content contains no developer-specific station data or credentials.
@@ -31,6 +30,7 @@ This document is reviewed before each milestone commit. Completed active items a
 - [ ] Add canonical URL metadata.
 
 ## P2 — Longer-term polish
+- [ ] Consider an Apple-device ecosystem hero graphic as low-priority marketing polish. The live Hook Echo radar remains the dynamic homepage visual; this artwork is not required for beta or App Store readiness.
 - [ ] Add lightweight analytics only if a concrete product need justifies the privacy tradeoff.
 - [ ] Add search-engine indexing controls and sitemap after public copy stabilizes.
 - [ ] Consider a changelog/release-notes page if external beta cadence makes it useful.
@@ -46,6 +46,8 @@ This document is reviewed before each milestone commit. Completed active items a
 - Cloudflare Workers code/functions beyond static-asset delivery.
 
 ## Completed milestones
+
+- 2026-09-08 — Durable public Setup guidance completed for location and ZIP fallback, optional user-owned Weather Underground Station configuration, iPhone Keychain credential isolation, Apple Watch, widgets and complications, refresh behavior, configuration changes, and credential-safe support reporting. The page remains focused on PWS Console rather than general station or provider setup.
 
 - 2026-09-08 — Durable public Support page published around PWS Console app support, with `support@pwsconsole.com` as the support/beta contact and an explicit boundary excluding third-party weather-station hardware and upstream station troubleshooting.
 

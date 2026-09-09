@@ -93,3 +93,9 @@ The policy intentionally identifies Weather Underground where the user supplies 
 PWS Console support covers the application and its integrations, including Local Weather, radar, Apple Watch, widgets, complications, and connecting Weather Underground Station configuration to the app.
 
 PWS Console does not provide support for third-party weather-station hardware, sensors, calibration, station networking, or a station's upstream delivery of observations to Weather Underground. Those issues remain with the station manufacturer or weather-data provider.
+
+## Public setup documentation boundary
+
+`/setup/` is the durable public Getting Started destination for configuring and using PWS Console across iPhone, iPad, Apple Watch, widgets, and complications. It explains the optional Station integration, device-location and ZIP-fallback behavior, refresh expectations, downstream credential isolation, and safe support reporting.
+
+PWS Console documentation covers how users configure and operate PWS Console. It does not attempt to provide general personal-weather-station hardware, sensor calibration, networking, Weather Underground account, or upstream station-publishing instructions. Weather Underground may be linked as an external resource where directly relevant to configuring the PWS Console integration; the Setup page uses only its top-level public site rather than depending on a fragile account-specific path.
