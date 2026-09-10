@@ -13,7 +13,6 @@ This document is reviewed before each milestone commit. Completed active items a
 
 ## P0 — Public-site shell and external beta readiness
 - [ ] Physically review the widened shell and above-the-fold radar layout on desktop Safari, iPhone Safari, and iPad Safari.
-- [ ] Add the external TestFlight invitation link only after Apple approval and intentional tester-enrollment decision.
 - [ ] Confirm all public content contains no developer-specific station data or credentials.
 
 ## P1 — Product presentation
@@ -43,7 +42,7 @@ This document is reviewed before each milestone commit. Completed active items a
 
 ## Completed milestones
 
-- 2026-09-09 — Durable public Beta landing page completed with build-independent testing expectations, requested iPhone/iPad/Watch/weather/radar/widget/complication coverage, a future-ready participation section without a provisional invitation URL, and credential-safe feedback guidance through `support@pwsconsole.com` and the public Support page.
+- 2026-09-09 — Durable public Beta landing page completed with active public TestFlight enrollment at `https://testflight.apple.com/join/P2BB8tDE`, build-independent testing expectations, requested iPhone/iPad/Watch/weather/radar/widget/complication coverage, and credential-safe feedback guidance through `support@pwsconsole.com` and the public Support page.
 
 - 2026-09-08 — Durable public Setup guidance completed for location and ZIP fallback, optional user-owned Weather Underground Station configuration, iPhone Keychain credential isolation, Apple Watch, widgets and complications, refresh behavior, configuration changes, and credential-safe support reporting. The page remains focused on PWS Console rather than general station or provider setup.
 

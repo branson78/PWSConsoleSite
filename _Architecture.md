@@ -102,6 +102,4 @@ PWS Console documentation covers how users configure and operate PWS Console. It
 
 ## Public beta boundary
 
-`/beta/` is the stable public landing page for external-beta participation expectations, requested test coverage, and credential-safe feedback guidance. Its public copy is deliberately independent of a specific application build number or Apple review state.
-
-TestFlight invitation availability may change without altering the page structure. Until an intentional participation mechanism is available, the Join the Beta card remains a durable availability message rather than linking to an invented or provisional invitation.
+`/beta/` is the durable public TestFlight enrollment landing page for external-beta participation, requested test coverage, and credential-safe feedback guidance. Its public copy is deliberately independent of a specific application build number or Apple review state. The public enrollment URL is `https://testflight.apple.com/join/P2BB8tDE`.
