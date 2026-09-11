@@ -37,35 +37,41 @@
     </header>
 
     <main class="pws-main">
-      <section class="hero" aria-labelledby="page-heading">
-        <article class="pws-card">
-          <p class="eyebrow">PWS Console</p>
-          <h1 id="page-heading">Your weather, your station, wherever you are.</h1>
-          <p class="lead">Local weather, personal weather station observations, animated radar, widgets, and Apple Watch — designed as one consistent console.</p>
-          <p class="body-copy">A personal weather station is optional. PWS Console works with native local weather on Apple devices and can also connect to a user's own Weather Underground PWS.</p>
+      <section class="hero-v2" data-hero-v2 data-active="watch" aria-labelledby="page-heading">
+        <div class="hero-v2__background" aria-hidden="true"></div>
+
+        <div class="hero-v2__copy is-visible" data-hero-copy>
+          <p class="eyebrow" data-copy-kicker>Apple Watch</p>
+          <h1 id="page-heading" data-copy-title>Weather at a glance.</h1>
+          <p class="lead" data-copy-body>Conditions, forecasts, complications, and animated radar right on your wrist.</p>
           <div class="pws-actions">
             <a class="pws-button primary" href="/features/">Explore Features</a>
-            <a class="pws-button" href="/setup/">Station Setup</a>
+            <a class="pws-button" href="/beta/">Beta</a>
           </div>
-        </article>
+        </div>
 
-        <aside class="pws-card" aria-label="Platform summary">
-          <p class="eyebrow">Apple Platforms</p>
-          <div class="stat-list">
-            <div class="stat">
-              <div class="stat-label">iPhone & iPad</div>
-              <div class="stat-value">Weather · Radar · Station</div>
-            </div>
-            <div class="stat">
-              <div class="stat-label">Apple Watch</div>
-              <div class="stat-value">PWS · Local · Forecast · Radar</div>
-            </div>
-            <div class="stat">
-              <div class="stat-label">Glanceable</div>
-              <div class="stat-value">Widgets & Complications</div>
+        <div class="hero-v2__stage" aria-label="PWS Console on Apple Watch, iPhone, and iPad">
+          <div class="hero-v2__device hero-v2__device--watch" data-device data-slot="front">
+            <img src="/assets/images/hero-v2/device-watch.png" alt="PWS Console radar on Apple Watch">
+            <div class="hero-v3__watch-radar" aria-hidden="true">
+              <img src="/assets/images/hero-v2/watch-radar-motion.png" alt="">
             </div>
           </div>
-        </aside>
+
+          <div class="hero-v2__device hero-v2__device--iphone" data-device data-slot="right">
+            <img src="/assets/images/hero-v2/device-iphone.png" alt="PWS Console weather on iPhone">
+          </div>
+
+          <div class="hero-v2__device hero-v2__device--ipad" data-device data-slot="left">
+            <img src="/assets/images/hero-v2/device-ipad.png" alt="PWS Console forecast on iPad">
+          </div>
+        </div>
+
+        <div class="hero-v2__dots" aria-label="Choose featured device">
+          <button class="hero-v2__dot" type="button" data-slide aria-pressed="true" aria-label="Show Apple Watch"></button>
+          <button class="hero-v2__dot" type="button" data-slide aria-pressed="false" aria-label="Show iPhone"></button>
+          <button class="hero-v2__dot" type="button" data-slide aria-pressed="false" aria-label="Show iPad"></button>
+        </div>
       </section>
 
       <section class="home-feature-region" aria-label="PWS Console highlights and live radar">
@@ -154,5 +160,6 @@
       </div>
     </footer>
   </div>
+  <script src="/assets/js/hero-v2.js" defer></script>
 </body>
 </html>

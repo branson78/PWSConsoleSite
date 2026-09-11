@@ -103,3 +103,20 @@ PWS Console documentation covers how users configure and operate PWS Console. It
 ## Public beta boundary
 
 `/beta/` is the durable public TestFlight enrollment landing page for external-beta participation, requested test coverage, and credential-safe feedback guidance. Its public copy is deliberately independent of a specific application build number or Apple review state. The public enrollment URL is `https://testflight.apple.com/join/P2BB8tDE`.
+
+## Homepage ecosystem carousel hero
+
+The homepage product hero is an intentionally client-side, static-asset presentation of the current Apple ecosystem. It does not introduce a server-side runtime or a dependency on the private PWS Console application.
+
+The hero:
+- Uses the approved atmospheric/weather visual treatment as a static background asset.
+- Presents iPad, iPhone, and Apple Watch as independently positioned device assets rather than baking the entire hero into one image.
+- Uses HTML for promotional copy so messaging remains accessible, responsive, searchable, and independently editable.
+- Rotates the three device assets through front/left/right carousel positions with a deliberate pause at each featured device.
+- Uses a localized animated radar treatment within the Apple Watch presentation while the Watch is featured.
+- Honors `prefers-reduced-motion` by suppressing nonessential hero animation.
+- Keeps carousel behavior entirely in public-site CSS/JavaScript with no configuration or application-state controls.
+
+The carousel structure is intentionally extensible. A future distributable Fire TV client, Desktop client, or other supported platform can be added as another carousel stop without redesigning the homepage information architecture. Platforms should not be added to the public carousel until their distribution is real and appropriate to advertise.
+
+The hero artwork is product-presentation material. It must not expose private station locations, credentials, home-server addresses, or other developer/user-specific data.
