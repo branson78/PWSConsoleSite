@@ -19,6 +19,7 @@ Because the site is static, any basic local web server can preview it. Opening `
 - `/setup/`
 - `/support/`
 - `/privacy/`
+- `/licensing/`
 - `/beta/`
 - `/assets/css/site.css`
 - `_Architecture.md`
@@ -27,3 +28,9 @@ Because the site is static, any basic local web server can preview it. Opening `
 ## Shell v2
 
 The public shell now uses the desktop PWS Console header/navigation proportions and includes a lazy-loaded anonymous Hook Echo radar demo centered on New York City.
+
+## License
+
+PWS Console source code in this repository is available under the PolyForm Noncommercial License 1.0.0. Noncommercial use, modification, and redistribution are permitted subject to the license terms. Commercial use requires separate permission.
+
+See `LICENSE` and https://pwsconsole.com/licensing/ for details. Third-party components and assets remain subject to their respective licenses and terms.

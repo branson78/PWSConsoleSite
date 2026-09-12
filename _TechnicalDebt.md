@@ -37,10 +37,12 @@ This document is reviewed before each milestone commit. Completed active items a
 - Accounts/authentication.
 - Dynamic weather or live personal-station data on the marketing site.
 - Any coupling to the private PWS Console application/runtime.
-- Frameworks, package managers, build pipelines, or client JavaScript until a concrete requirement justifies them.
+- Frameworks, package managers, or build pipelines until a concrete requirement justifies them; small dependency-free client JavaScript remains acceptable for focused UI behavior such as the hero carousel.
 - Cloudflare Workers code/functions beyond static-asset delivery.
 
 ## Completed milestones
+
+- 2026-09-11 — Public licensing completed with PolyForm Noncommercial 1.0.0, a durable `/licensing/` page, contextual Support/Privacy links, and a consistent static License footer link across all public pages.
 
 - 2026-09-10 — Apple ecosystem Carousel Hero v3.1 approved for the homepage with polished iPad/iPhone device assets, Apple Watch radar motion, fading HTML device copy, responsive/reduced-motion behavior, and an extensible carousel structure for future distributable platforms.
 

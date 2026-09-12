@@ -120,3 +120,11 @@ The hero:
 The carousel structure is intentionally extensible. A future distributable Fire TV client, Desktop client, or other supported platform can be added as another carousel stop without redesigning the homepage information architecture. Platforms should not be added to the public carousel until their distribution is real and appropriate to advertise.
 
 The hero artwork is product-presentation material. It must not expose private station locations, credentials, home-server addresses, or other developer/user-specific data.
+
+## Public licensing boundary
+
+`/licensing/` is the durable public software-licensing destination for PWS Console. PWS Console source code uses the PolyForm Noncommercial License 1.0.0 where expressly applied. Commercial use requires separate permission.
+
+The public License page is linked from Support, Privacy, and the site-wide static footer rather than adding another primary-navigation pill.
+
+PWS Console branding and third-party components are treated separately from the PWS Console software license. Third-party software, services, libraries, artwork, data, and other components retain their applicable licenses, terms, and attribution requirements. Public licensing language must not imply that a community fork is an official PWS Console distribution.
