@@ -102,7 +102,7 @@ PWS Console does not provide support for third-party weather-station hardware, s
 
 ## Public setup documentation boundary
 
-`/setup/` is the durable public Getting Started destination for configuring and using PWS Console across iPhone, iPad, Apple Watch, widgets, and complications. It explains the optional Station integration, device-location and ZIP-fallback behavior, refresh expectations, downstream credential isolation, and safe support reporting.
+`/setup/` is the durable public Getting Started destination for configuring and using PWS Console across iPhone, iPad, Apple Watch, widgets, complications, and Fire TV. It explains the optional Station integration, Apple-device location and ZIP-fallback behavior, Fire TV Home ZIP setup and essential remote navigation, refresh expectations, downstream credential isolation, and safe support reporting.
 
 PWS Console documentation covers how users configure and operate PWS Console. It does not attempt to provide general personal-weather-station hardware, sensor calibration, networking, Weather Underground account, or upstream station-publishing instructions. Weather Underground may be linked as an external resource where directly relevant to configuring the PWS Console integration; the Setup page uses only its top-level public site rather than depending on a fragile account-specific path.
 
