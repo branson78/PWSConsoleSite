@@ -765,16 +765,26 @@ h3 {
   filter: brightness(.78) saturate(.82);
 }
 
+.hero-v2__device[data-slot="back"] {
+  left: 51%;
+  top: 18%;
+  z-index: 3;
+  opacity: .42;
+  filter: brightness(.68) saturate(.72);
+}
+
 .hero-v2__device--watch { width: 245px; }
 .hero-v2__device--iphone { width: 255px; }
 .hero-v2__device--ipad { width: 470px; }
+.hero-v2__device--fire-tv { width: 580px; }
 
 .hero-v2__device--watch[data-slot="front"] {
   transform: translate(-50%, -50%) scale(1.18);
 }
 
 .hero-v2__device--watch[data-slot="left"],
-.hero-v2__device--watch[data-slot="right"] {
+.hero-v2__device--watch[data-slot="right"],
+.hero-v2__device--watch[data-slot="back"] {
   transform: translate(-50%, -50%) scale(.72);
 }
 
@@ -790,6 +800,10 @@ h3 {
   transform: translate(-50%, -50%) scale(.67) rotate(7deg);
 }
 
+.hero-v2__device--iphone[data-slot="back"] {
+  transform: translate(-50%, -50%) scale(.57) rotate(-2deg);
+}
+
 .hero-v2__device--ipad[data-slot="front"] {
   transform: translate(-50%, -50%) scale(.96) rotate(-1deg);
 }
@@ -800,6 +814,26 @@ h3 {
 
 .hero-v2__device--ipad[data-slot="right"] {
   transform: translate(-50%, -50%) scale(.58) rotate(5deg);
+}
+
+.hero-v2__device--ipad[data-slot="back"] {
+  transform: translate(-50%, -50%) scale(.48) rotate(2deg);
+}
+
+.hero-v2__device--fire-tv[data-slot="front"] {
+  transform: translate(-50%, -50%) scale(.9) rotate(-2deg);
+}
+
+.hero-v2__device--fire-tv[data-slot="left"] {
+  transform: translate(-50%, -50%) scale(.48) rotate(-7deg);
+}
+
+.hero-v2__device--fire-tv[data-slot="right"] {
+  transform: translate(-50%, -50%) scale(.48) rotate(6deg);
+}
+
+.hero-v2__device--fire-tv[data-slot="back"] {
+  transform: translate(-50%, -50%) scale(.42) rotate(-1deg);
 }
 
 .hero-v2__dots {
@@ -872,13 +906,15 @@ h3 {
   }
 
   .hero-v2__device[data-slot="left"],
-  .hero-v2__device[data-slot="right"] {
+  .hero-v2__device[data-slot="right"],
+  .hero-v2__device[data-slot="back"] {
     opacity: .18;
   }
 
   .hero-v2__device--ipad { width: min(430px, 80vw); }
   .hero-v2__device--iphone { width: min(240px, 47vw); }
   .hero-v2__device--watch { width: min(230px, 47vw); }
+  .hero-v2__device--fire-tv { width: min(500px, 88vw); }
 }
 
 @media (max-width: 520px) {
@@ -900,7 +936,8 @@ h3 {
   }
 
   .hero-v2__device[data-slot="left"],
-  .hero-v2__device[data-slot="right"] {
+  .hero-v2__device[data-slot="right"],
+  .hero-v2__device[data-slot="back"] {
     display: none;
   }
 
@@ -919,6 +956,10 @@ h3 {
 
   .hero-v2__device--watch[data-slot="front"] {
     transform: translate(-50%, -50%) scale(1);
+  }
+
+  .hero-v2__device--fire-tv[data-slot="front"] {
+    transform: translate(-50%, -50%) scale(.92) rotate(-2deg);
   }
 }
 

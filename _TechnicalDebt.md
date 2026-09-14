@@ -10,7 +10,8 @@ This document is reviewed before each milestone commit. Completed active items a
 - The public website is intentionally static and separate from `app.pwsconsole.com`.
 - The first shell derives its colors/cards from the native PWS Console design system and now uses the desktop application's larger brand/header and pill-navigation proportions.
 - The homepage includes an eagerly loaded anonymous Hook Echo live-radar card centered on New York City so live radar is visible on initial desktop page load; it does not depend on PWS Console private infrastructure.
-- The homepage now includes an Apple-device ecosystem carousel hero using independently positioned iPad, iPhone, and Apple Watch assets, fading HTML copy, reduced-motion support, and localized Watch radar motion. The structure is designed to accept future distributable platforms without redesigning the homepage.
+- The homepage includes a four-platform ecosystem carousel hero using independently positioned iPad, iPhone, Apple Watch, and Fire TV assets, fading HTML copy, reduced-motion support, and localized Watch radar motion.
+- The public Fire TV page and limited Support/Privacy copy describe the Home ZIP experience without connecting the public site to station credentials or private runtime data.
 
 ## P0 — Public-site shell and external beta readiness
 - [ ] Physically review the widened shell and above-the-fold radar layout on desktop Safari, iPhone Safari, and iPad Safari.
@@ -20,6 +21,7 @@ This document is reviewed before each milestone commit. Completed active items a
 - [ ] Add curated screenshots for widgets and complications where they materially improve product presentation beyond the completed iPad/iPhone/Apple Watch carousel hero.
 - [ ] Add concise feature walkthroughs without turning the site into a documentation portal.
 - [ ] Review responsive layout at common phone/tablet/desktop widths.
+- [ ] Physically review the four-device hero at each carousel stop, particularly the Fire TV artwork's scale and layering at desktop, tablet, and phone widths.
 - [ ] Review keyboard navigation, focus states, semantic headings, contrast, and reduced-motion behavior.
 - [ ] Add social sharing metadata and an appropriate preview image.
 - [ ] Add favicon / Apple touch icon from approved PWS Console artwork.
@@ -41,6 +43,8 @@ This document is reviewed before each milestone commit. Completed active items a
 - Cloudflare Workers code/functions beyond static-asset delivery.
 
 ## Completed milestones
+
+- 2026-09-14 — Fire TV public-site addition completed: the approved static Fire TV device artwork joined the homepage carousel as a fourth responsive, reduced-motion-aware stop; a durable `/fire-tv/` public reference and focused Support/Privacy coverage were added without expanding the public-site security boundary.
 
 - 2026-09-11 — Public licensing completed with PolyForm Noncommercial 1.0.0, a durable `/licensing/` page, contextual Support/Privacy links, and a consistent static License footer link across all public pages.
 

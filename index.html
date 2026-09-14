@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#0f1115">
-  <meta name="description" content="PWS Console — local weather, personal weather station data, radar, widgets, and Apple Watch.">
+  <meta name="description" content="PWS Console — local weather, personal weather station data, radar, widgets, Apple Watch, and Fire TV.">
   <title>Overview | PWS Console</title>
   <link rel="stylesheet" href="/assets/css/site.css">
 </head>
@@ -31,7 +31,7 @@
               Public Site
             </div>
           </div>
-          <div class="pws-context">Weather · Radar · PWS · Apple Watch</div>
+          <div class="pws-context">Weather · Radar · PWS · Apple Watch · Fire TV</div>
         </div>
       </div>
     </header>
@@ -50,7 +50,7 @@
           </div>
         </div>
 
-        <div class="hero-v2__stage" aria-label="PWS Console on Apple Watch, iPhone, and iPad">
+        <div class="hero-v2__stage" aria-label="PWS Console on Apple Watch, iPhone, iPad, and Fire TV">
           <div class="hero-v2__device hero-v2__device--watch" data-device data-slot="front">
             <img src="/assets/images/hero-v2/device-watch.png" alt="PWS Console radar on Apple Watch">
             <div class="hero-v3__watch-radar" aria-hidden="true">
@@ -65,12 +65,17 @@
           <div class="hero-v2__device hero-v2__device--ipad" data-device data-slot="left">
             <img src="/assets/images/hero-v2/device-ipad.png" alt="PWS Console forecast on iPad">
           </div>
+
+          <div class="hero-v2__device hero-v2__device--fire-tv" data-device data-slot="right">
+            <img src="/assets/images/hero-v2/device-fire-tv.png" alt="PWS Console weather on Fire TV">
+          </div>
         </div>
 
         <div class="hero-v2__dots" aria-label="Choose featured device">
           <button class="hero-v2__dot" type="button" data-slide aria-pressed="true" aria-label="Show Apple Watch"></button>
           <button class="hero-v2__dot" type="button" data-slide aria-pressed="false" aria-label="Show iPhone"></button>
           <button class="hero-v2__dot" type="button" data-slide aria-pressed="false" aria-label="Show iPad"></button>
+          <button class="hero-v2__dot" type="button" data-slide aria-pressed="false" aria-label="Show Fire TV"></button>
         </div>
       </section>
 
@@ -98,6 +103,12 @@
             <span class="feature-kicker">Home Screen</span>
             <h2>Widgets</h2>
             <p>Glanceable station conditions through compact PWS Console widgets that consume the canonical iPhone snapshot.</p>
+          </article>
+
+          <article class="pws-card feature-card">
+            <span class="feature-kicker">Fire TV</span>
+            <h2><a href="/fire-tv/">Weather on the big screen</a></h2>
+            <p>Home ZIP weather, forecasts, animated radar, and severe-weather alerts in a remote-friendly TV experience. <a href="/fire-tv/">Learn about Fire TV →</a></p>
           </article>
         </div>
 

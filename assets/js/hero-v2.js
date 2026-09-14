@@ -20,6 +20,12 @@
       kicker: "iPad",
       title: "See the forecast unfold.",
       body: "A wider canvas gives hourly and extended forecasts the room they deserve."
+    },
+    {
+      id: "fire-tv",
+      kicker: "Amazon Fire TV",
+      title: "Weather fills the room.",
+      body: "Home ZIP weather, forecasts, animated radar, and severe-weather alerts in a remote-friendly TV experience."
     }
   ];
 
@@ -33,9 +39,10 @@
 
   let active = 0;
   let timer = null;
+  let resumeTimer = null;
   let pausedByUser = false;
 
-  const slots = ["front", "right", "left"];
+  const slots = ["front", "right", "back", "left"];
 
   function setActive(index, immediate = false) {
     active = (index + slides.length) % slides.length;
@@ -69,6 +76,7 @@
     if (reduceMotion || pausedByUser) return;
     window.clearTimeout(timer);
     timer = window.setTimeout(() => {
+      if (pausedByUser) return;
       setActive(active + 1);
       schedule();
     }, 6800);
@@ -78,20 +86,13 @@
     dot.addEventListener("click", () => {
       pausedByUser = true;
       window.clearTimeout(timer);
+      window.clearTimeout(resumeTimer);
       setActive(index);
-      window.setTimeout(() => {
+      resumeTimer = window.setTimeout(() => {
         pausedByUser = false;
         schedule();
       }, 12000);
     });
-  });
-
-  hero.addEventListener("mouseenter", () => {
-    if (!reduceMotion) window.clearTimeout(timer);
-  });
-
-  hero.addEventListener("mouseleave", () => {
-    if (!reduceMotion && !pausedByUser) schedule();
   });
 
   setActive(0, true);

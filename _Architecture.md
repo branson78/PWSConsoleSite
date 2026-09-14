@@ -121,6 +121,12 @@ The carousel structure is intentionally extensible. A future distributable Fire 
 
 The hero artwork is product-presentation material. It must not expose private station locations, credentials, home-server addresses, or other developer/user-specific data.
 
+## Public Fire TV surface
+
+`/fire-tv/` is the durable public product and support reference for PWS Console on Amazon Fire TV. It describes the Home ZIP weather experience, forecasts, animated NOAA/NWS radar, severe-weather alerts, and remote-friendly interface without exposing station configuration, credentials, private runtime data, home-server addresses, or administrative controls.
+
+The supplied Fire TV device artwork is a static presentation asset in the same client-side carousel as iPad, iPhone, and Apple Watch. It is not generated, transformed, or connected to live application data by the site. The four-stop carousel preserves its responsive and `prefers-reduced-motion` behavior.
+
 ## Public licensing boundary
 
 `/licensing/` is the durable public software-licensing destination for PWS Console. PWS Console source code uses the PolyForm Noncommercial License 1.0.0 where expressly applied. Commercial use requires separate permission.
