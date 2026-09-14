@@ -53,7 +53,9 @@ The homepage includes one anonymous live Hook Echo radar demonstration. PWS Cons
 - `/features/` — Features
 - `/setup/` — Getting Started / Station setup
 - `/support/` — Support
-- `/privacy/` — Privacy
+- `/privacy/` — Privacy policy selector
+- `/privacy/apple/` — Apple Devices Privacy Policy
+- `/privacy/fire-tv/` — Fire TV Privacy Policy
 - `/beta/` — External TestFlight beta
 
 ## Security boundary
@@ -80,7 +82,11 @@ The live Hook Echo preview is intentionally placed in the first-screen content r
 
 ## Public privacy and support surface
 
-`/privacy/` is the durable public Privacy Policy URL for PWS Console. It documents the Build 4 privacy boundary, including optional Weather Underground configuration, iPhone Keychain credential storage, location use, third-party weather-data requests, App Group and WatchConnectivity sharing, on-device cached data, and the absence of PWS Console advertising or cross-app advertising tracking.
+`/privacy/` is the durable public privacy landing page for PWS Console. It links to platform-specific policies while generic site navigation and footers continue to use this stable selector URL.
+
+`/privacy/apple/` preserves the existing Apple-device policy and documents the Build 4 privacy boundary, including optional Weather Underground configuration, iPhone Keychain credential storage, location use, third-party weather-data requests, App Group and WatchConnectivity sharing, on-device cached data, and the absence of PWS Console advertising or cross-app advertising tracking.
+
+`/privacy/fire-tv/` is the durable Fire TV storefront-policy URL. It describes the locally stored Home ZIP, approximate-location lookup, direct third-party weather/mapping requests, absence of Fire TV location permission, accounts, advertising, behavioral analytics, and cross-application tracking.
 
 Public privacy and support inquiries use `support@pwsconsole.com`.
 
@@ -124,6 +130,8 @@ The hero artwork is product-presentation material. It must not expose private st
 ## Public Fire TV surface
 
 `/fire-tv/` is the durable public product and support reference for PWS Console on Amazon Fire TV. It describes the Home ZIP weather experience, forecasts, animated NOAA/NWS radar, severe-weather alerts, and remote-friendly interface without exposing station configuration, credentials, private runtime data, home-server addresses, or administrative controls.
+
+Fire TV is a first-class primary-navigation destination, alongside the existing Features destination for the Apple-device feature area. Fire TV-specific privacy context links directly to `/privacy/fire-tv/`; generic Privacy links resolve to `/privacy/`.
 
 The supplied Fire TV device artwork is a static presentation asset in the same client-side carousel as iPad, iPhone, and Apple Watch. It is not generated, transformed, or connected to live application data by the site. The four-stop carousel preserves its responsive and `prefers-reduced-motion` behavior.
 

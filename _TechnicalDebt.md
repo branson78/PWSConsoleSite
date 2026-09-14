@@ -11,10 +11,12 @@ This document is reviewed before each milestone commit. Completed active items a
 - The first shell derives its colors/cards from the native PWS Console design system and now uses the desktop application's larger brand/header and pill-navigation proportions.
 - The homepage includes an eagerly loaded anonymous Hook Echo live-radar card centered on New York City so live radar is visible on initial desktop page load; it does not depend on PWS Console private infrastructure.
 - The homepage includes a four-platform ecosystem carousel hero using independently positioned iPad, iPhone, Apple Watch, and Fire TV assets, fading HTML copy, reduced-motion support, and localized Watch radar motion.
-- The public Fire TV page and limited Support/Privacy copy describe the Home ZIP experience without connecting the public site to station credentials or private runtime data.
+- Fire TV is a first-class primary-navigation destination, while Features remains the Apple-device feature area.
+- The privacy selector at `/privacy/` routes users to stable Apple-device (`/privacy/apple/`) and Fire TV (`/privacy/fire-tv/`) policy URLs; Fire TV-specific context links directly to its policy.
 
 ## P0 — Public-site shell and external beta readiness
 - [ ] Physically review the widened shell and above-the-fold radar layout on desktop Safari, iPhone Safari, and iPad Safari.
+- [ ] Physically review the seven-pill primary navigation on desktop Safari, iPhone Safari, and iPad Safari, including wrapping and keyboard focus order.
 - [ ] Confirm all public content contains no developer-specific station data or credentials.
 
 ## P1 — Product presentation
@@ -33,6 +35,7 @@ This document is reviewed before each milestone commit. Completed active items a
 - [ ] Consider a changelog/release-notes page if external beta cadence makes it useful.
 - [ ] Consider custom 404/other static error pages.
 - [ ] Consider automated static accessibility/link checks if site complexity grows.
+- [ ] Consider a redirect strategy if a prior Apple storefront submission or external link requires the former single-policy content at `/privacy/`; the current URL is intentionally a platform selector.
 
 ## Intentionally deferred
 - Server-side forms or feedback ingestion.
@@ -43,6 +46,8 @@ This document is reviewed before each milestone commit. Completed active items a
 - Cloudflare Workers code/functions beyond static-asset delivery.
 
 ## Completed milestones
+
+- 2026-09-14 — Platform-aware public privacy architecture and navigation completed: Fire TV became a peer primary-navigation destination; `/privacy/` became a durable policy selector; existing Apple policy claims were preserved at `/privacy/apple/`; and a Fire TV-specific policy was added at `/privacy/fire-tv/` without expanding the public-site data boundary.
 
 - 2026-09-14 — Fire TV public-site addition completed: the approved static Fire TV device artwork joined the homepage carousel as a fourth responsive, reduced-motion-aware stop; a durable `/fire-tv/` public reference and focused Support/Privacy coverage were added without expanding the public-site security boundary.
 

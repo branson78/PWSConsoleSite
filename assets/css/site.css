@@ -490,6 +490,8 @@ h3 {
   }
 
   .pws-tabs {
+    width: 100%;
+    min-width: 0;
     flex-wrap: nowrap;
     justify-content: flex-start;
     overflow-x: auto;
