@@ -13,8 +13,9 @@ This document is reviewed before each milestone commit. Completed active items a
 - The homepage includes a four-platform ecosystem carousel hero using independently positioned iPad, iPhone, Apple Watch, and Fire TV assets, fading HTML copy, reduced-motion support, and localized Watch radar motion.
 - Fire TV is a first-class primary-navigation destination, while Features remains the Apple-device feature area.
 - The privacy selector at `/privacy/` routes users to stable Apple-device (`/privacy/apple/`) and Fire TV (`/privacy/fire-tv/`) policy URLs; Fire TV-specific context links directly to its policy.
+- The Apple app is publicly available on the App Store, and Fire TV is publicly released. Apple download calls to action use the canonical App Store URL; Fire TV intentionally has no storefront link because users discover and install it through the TV/Amazon ecosystem.
 
-## P0 — Public-site shell and external beta readiness
+## P0 — Public-site release verification
 - [ ] Physically review the widened shell and above-the-fold radar layout on desktop Safari, iPhone Safari, and iPad Safari.
 - [ ] Physically review the seven-pill primary navigation on desktop Safari, iPhone Safari, and iPad Safari, including wrapping and keyboard focus order.
 - [ ] Confirm all public content contains no developer-specific station data or credentials.
@@ -32,7 +33,7 @@ This document is reviewed before each milestone commit. Completed active items a
 ## P2 — Longer-term polish
 - [ ] Add lightweight analytics only if a concrete product need justifies the privacy tradeoff.
 - [ ] Add search-engine indexing controls and sitemap after public copy stabilizes.
-- [ ] Consider a changelog/release-notes page if external beta cadence makes it useful.
+- [ ] Consider a changelog/release-notes page if a public release cadence makes it useful.
 - [ ] Consider custom 404/other static error pages.
 - [ ] Consider automated static accessibility/link checks if site complexity grows.
 - [ ] Consider a redirect strategy if a prior Apple storefront submission or external link requires the former single-policy content at `/privacy/`; the current URL is intentionally a platform selector.
@@ -47,6 +48,8 @@ This document is reviewed before each milestone commit. Completed active items a
 
 ## Completed milestones
 
+- 2026-09-19 — Public Apple and Fire TV release copy completed: primary navigation and Apple download calls to action use the canonical App Store URL; former TestFlight messaging was replaced with public availability language; Fire TV is identified as available now; and the legacy `/beta/` route now directs existing visitors to the public Apple download rather than implying a pre-release Apple app. Fire TV intentionally has no website storefront link because users discover and install it through the TV/Amazon ecosystem.
+
 - 2026-09-14 — Platform-aware public privacy architecture and navigation completed: Fire TV became a peer primary-navigation destination; `/privacy/` became a durable policy selector; existing Apple policy claims were preserved at `/privacy/apple/`; and a Fire TV-specific policy was added at `/privacy/fire-tv/` without expanding the public-site data boundary.
 
 - 2026-09-14 — Fire TV public-site addition completed: the approved static Fire TV device artwork joined the homepage carousel as a fourth responsive, reduced-motion-aware stop; a durable `/fire-tv/` public reference and focused Support/Privacy coverage were added without expanding the public-site security boundary.
@@ -55,7 +58,6 @@ This document is reviewed before each milestone commit. Completed active items a
 
 - 2026-09-10 — Apple ecosystem Carousel Hero v3.1 approved for the homepage with polished iPad/iPhone device assets, Apple Watch radar motion, fading HTML device copy, responsive/reduced-motion behavior, and an extensible carousel structure for future distributable platforms.
 
-- 2026-09-09 — Durable public Beta landing page completed with active public TestFlight enrollment at `https://testflight.apple.com/join/P2BB8tDE`, build-independent testing expectations, requested iPhone/iPad/Watch/weather/radar/widget/complication coverage, and credential-safe feedback guidance through `support@pwsconsole.com` and the public Support page.
 
 - 2026-09-08 — Durable public Setup guidance completed for location and ZIP fallback, optional user-owned Weather Underground Station configuration, iPhone Keychain credential isolation, Apple Watch, widgets and complications, refresh behavior, configuration changes, and credential-safe support reporting. The page remains focused on PWS Console rather than general station or provider setup.
 

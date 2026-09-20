@@ -20,7 +20,7 @@ Because the site is static, any basic local web server can preview it. Opening `
 - `/support/`
 - `/privacy/`
 - `/licensing/`
-- `/beta/`
+- `/beta/` — Legacy Apple-download landing page
 - `/assets/css/site.css`
 - `_Architecture.md`
 - `_TechnicalDebt.md`

@@ -1,7 +1,7 @@
 # PWS Console Site — Architecture
 
 ## Purpose
-`pwsconsole.com` is the public-facing product, support, privacy, setup, and beta website for PWS Console.
+`pwsconsole.com` is the public-facing product, download, support, privacy, and setup website for PWS Console.
 
 ## Source of truth
 - GitHub repository: `branson78/PWSConsoleSite`
@@ -56,7 +56,7 @@ The homepage includes one anonymous live Hook Echo radar demonstration. PWS Cons
 - `/privacy/` — Privacy policy selector
 - `/privacy/apple/` — Apple Devices Privacy Policy
 - `/privacy/fire-tv/` — Fire TV Privacy Policy
-- `/beta/` — External TestFlight beta
+- `/beta/` — Legacy Apple-download landing page that directs visitors to the App Store
 
 ## Security boundary
 The site is intentionally public and is not protected by Cloudflare Access.
@@ -106,9 +106,11 @@ PWS Console does not provide support for third-party weather-station hardware, s
 
 PWS Console documentation covers how users configure and operate PWS Console. It does not attempt to provide general personal-weather-station hardware, sensor calibration, networking, Weather Underground account, or upstream station-publishing instructions. Weather Underground may be linked as an external resource where directly relevant to configuring the PWS Console integration; the Setup page uses only its top-level public site rather than depending on a fragile account-specific path.
 
-## Public beta boundary
+## Public download boundary
 
-`/beta/` is the durable public TestFlight enrollment landing page for external-beta participation, requested test coverage, and credential-safe feedback guidance. Its public copy is deliberately independent of a specific application build number or Apple review state. The public enrollment URL is `https://testflight.apple.com/join/P2BB8tDE`.
+Apple navigation and download calls to action use the canonical public App Store listing: `https://apps.apple.com/us/app/pws-console/id6808379047`. The former `/beta/` route remains available as a legacy Apple-download landing page so existing external links no longer imply that the Apple app is pre-release.
+
+Fire TV is publicly released and remains represented by the durable `/fire-tv/` product page. The website intentionally has no Amazon Appstore download/storefront link: Fire TV users discover and install through the TV/Amazon ecosystem.
 
 ## Homepage ecosystem carousel hero
 
@@ -123,7 +125,7 @@ The hero:
 - Honors `prefers-reduced-motion` by suppressing nonessential hero animation.
 - Keeps carousel behavior entirely in public-site CSS/JavaScript with no configuration or application-state controls.
 
-The carousel structure is intentionally extensible. A future distributable Fire TV client, Desktop client, or other supported platform can be added as another carousel stop without redesigning the homepage information architecture. Platforms should not be added to the public carousel until their distribution is real and appropriate to advertise.
+The carousel structure is intentionally extensible. A future Desktop client or other supported platform can be added as another carousel stop without redesigning the homepage information architecture. Platforms should not be added to the public carousel until their distribution is real and appropriate to advertise.
 
 The hero artwork is product-presentation material. It must not expose private station locations, credentials, home-server addresses, or other developer/user-specific data.
 
