@@ -55,6 +55,7 @@ The homepage includes one anonymous live Hook Echo radar demonstration. PWS Cons
 - `/support/` — Support
 - `/privacy/` — Privacy policy selector
 - `/privacy/apple/` — Apple Devices Privacy Policy
+- `/privacy/android/` — Android Privacy Policy
 - `/privacy/fire-tv/` — Fire TV Privacy Policy
 - `/beta/` — Legacy Apple-download landing page that directs visitors to the App Store
 
@@ -85,6 +86,8 @@ The live Hook Echo preview is intentionally placed in the first-screen content r
 `/privacy/` is the durable public privacy landing page for PWS Console. It links to platform-specific policies while generic site navigation and footers continue to use this stable selector URL.
 
 `/privacy/apple/` preserves the existing Apple-device policy and documents the Build 4 privacy boundary, including optional Weather Underground configuration, iPhone Keychain credential storage, location use, third-party weather-data requests, App Group and WatchConnectivity sharing, on-device cached data, and the absence of PWS Console advertising or cross-app advertising tracking.
+
+`/privacy/android/` is the durable Android policy URL. It documents the manually entered Saved Home and Android system-geocoder boundary, direct provider requests for weather/radar/maps, optional user-owned Weather Underground credentials protected by Android Keystore and excluded from backup/device transfer, local settings, bounded in-memory application caches, and the absence of PWS Console accounts, advertising, analytics, crash reporting, developer-operated weather-data backends, background refresh, and notifications. It does not make retention, deletion, or IP-address claims for third-party providers.
 
 `/privacy/fire-tv/` is the durable Fire TV storefront-policy URL. It describes the locally stored Home ZIP, approximate-location lookup, direct third-party weather/mapping requests, absence of Fire TV location permission, accounts, advertising, behavioral analytics, and cross-application tracking.
 

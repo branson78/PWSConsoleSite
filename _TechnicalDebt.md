@@ -12,8 +12,13 @@ This document is reviewed before each milestone commit. Completed active items a
 - The homepage includes an eagerly loaded anonymous Hook Echo live-radar card centered on New York City so live radar is visible on initial desktop page load; it does not depend on PWS Console private infrastructure.
 - The homepage includes a four-platform ecosystem carousel hero using independently positioned iPad, iPhone, Apple Watch, and Fire TV assets, fading HTML copy, reduced-motion support, and localized Watch radar motion.
 - Fire TV is a first-class primary-navigation destination, while Features remains the Apple-device feature area.
-- The privacy selector at `/privacy/` routes users to stable Apple-device (`/privacy/apple/`) and Fire TV (`/privacy/fire-tv/`) policy URLs; Fire TV-specific context links directly to its policy.
+- The privacy selector at `/privacy/` routes users to stable Apple-device (`/privacy/apple/`), Android (`/privacy/android/`), and Fire TV (`/privacy/fire-tv/`) policy URLs; Fire TV-specific context links directly to its policy.
 - The Apple app is publicly available on the App Store, and Fire TV is publicly released. Apple download calls to action use the canonical App Store URL; Fire TV intentionally has no storefront link because users discover and install it through the TV/Amazon ecosystem.
+
+## P0 — Android Google Play handoff
+- [ ] In the separately authorized Android repository milestone, link the published Android policy URL from the in-app Info surface. Do not add Google Play or Android distribution navigation to the public website until the store-listing milestone is authorized.
+- [ ] Complete the Google Play Data Safety declaration against the final Android release artifact and every included dependency/provider behavior. Keep its answers aligned with `/privacy/android/`; do not infer third-party retention, deletion, or IP-address practices from this public policy.
+- [ ] Before Play submission, complete the Android release gates that remain outside this website: production signing/artifact provenance, final release build validation, provider-terms approval, physical-device accessibility review, and supported-device checks.
 
 ## P0 — Public-site release verification
 - [ ] Physically review the widened shell and above-the-fold radar layout on desktop Safari, iPhone Safari, and iPad Safari.
@@ -47,6 +52,8 @@ This document is reviewed before each milestone commit. Completed active items a
 - Cloudflare Workers code/functions beyond static-asset delivery.
 
 ## Completed milestones
+
+- 2026-11-15 — Android privacy-policy publication completed: `/privacy/android/` was added as a peer policy route and linked from the durable `/privacy/` selector. The policy reflects the implemented Android Saved Home/geocoder, direct-provider, Weather Underground credential/Android Keystore, backup-exclusion, local-storage, and no-ads/analytics/backend boundaries. The reviewed two-file publication was pushed through the existing GitHub `main` → Cloudflare Workers Static Assets workflow; live Android and selector content were hash-verified against the committed source. No Android app, Play Console, Cloudflare-configuration, or general product-navigation changes were made.
 
 - 2026-09-19 — Public Apple and Fire TV release copy completed: primary navigation and Apple download calls to action use the canonical App Store URL; former TestFlight messaging was replaced with public availability language; Fire TV is identified as available now; and the legacy `/beta/` route now directs existing visitors to the public Apple download rather than implying a pre-release Apple app. Fire TV intentionally has no website storefront link because users discover and install it through the TV/Amazon ecosystem.
 
