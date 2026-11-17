@@ -19,6 +19,7 @@ This document is reviewed before each milestone commit. Completed active items a
 - [ ] In the separately authorized Android repository milestone, link the published Android policy URL from the in-app Info surface. Do not add Google Play or Android distribution navigation to the public website until the store-listing milestone is authorized.
 - [ ] Complete the Google Play Data Safety declaration against the final Android release artifact and every included dependency/provider behavior. Keep its answers aligned with `/privacy/android/`; do not infer third-party retention, deletion, or IP-address practices from this public policy.
 - [ ] Before Play submission, complete the Android release gates that remain outside this website: production signing/artifact provenance, final release build validation, provider-terms approval, physical-device accessibility review, and supported-device checks.
+- [ ] Before implementing optional device-derived location, design the explicit runtime-permission flow and fallback behavior, then re-review the Android policy and Google Play Data Safety declaration against the resulting release artifact. The v1.0 policy must continue to distinguish manually configured Saved Home coordinates from device location.
 
 ## P0 — Public-site release verification
 - [ ] Physically review the widened shell and above-the-fold radar layout on desktop Safari, iPhone Safari, and iPad Safari.
